@@ -9,11 +9,16 @@ class Footman < Unit
   end
 
   def attack!(enemy)
-    enemy.damage(10)
+    if enemy.is_a? Barracks
+      ap = (@attack_power / 2).ceil 
+    else
+      ap = @attack_power
+    end
+    enemy.damage(ap)
   end
 
   def damage(points)
-    @health_points -= points
+    self.health_points -= points
   end
 
 end
