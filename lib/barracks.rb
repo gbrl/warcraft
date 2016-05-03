@@ -1,5 +1,3 @@
-require 'numeric'
-
 class Barracks
   attr_accessor :food, :gold, :health_points, :lumber
 
