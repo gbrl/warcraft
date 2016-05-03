@@ -14,7 +14,7 @@ class Unit
     if enemy.dead? || self.dead?
       enemy.damage(0)
     else
-      enemy.damage(3) 
+      enemy.damage(self.attack_power) 
     end
   end
 

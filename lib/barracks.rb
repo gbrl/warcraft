@@ -19,7 +19,7 @@ class Barracks
   end
 
   def can_build_siege_engine?
-    self.gold > 200 && self.food > 3 && lumber > 60
+    self.gold > 200 && self.food > 3 && self.lumber > 60
   end
 
   def train_footman
